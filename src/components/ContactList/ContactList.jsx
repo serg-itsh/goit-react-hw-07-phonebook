@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import {
   deleteContact,
   fetchContacts,
@@ -47,13 +46,3 @@ export default function ContactList() {
     </ul>
   );
 }
-
-ContactList.propTypes = {
-  contactList: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
-    })
-  ),
-};
